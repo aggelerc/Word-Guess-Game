@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman...Barbecue Edition!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/javascript/hangMan.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+</head>
+
+<body>
+
+<div class="jumbotron">
+
+    <h1>Hangman...Barbecue Edition!</h1>
+
+    <p>Wins: <span id="wins"></span></p>
+
+    <p>Losses: <span id="losses"></span></p>
+
+    <p>Guesses remaining: <span id="guessesRemaining"></span></p>
+
+    <p>Wrong Guesses: <span id="wrongGuesses"></span></p>
+
+    <h3 id="displayedWord"></h3>
+
+</div>
+
+
+<script>
+    document.getElementById('displayedWord').innerHTML = hitsAndOther.join(" ");
+
+    document.getElementById('guessesRemaining').innerHTML = guessesLeft;
+
+</script>
+
+
+      
+        
+</body>
+</html>
